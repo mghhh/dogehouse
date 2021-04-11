@@ -33,6 +33,7 @@ export const App: React.FC<AppProps> = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hasTokens]);
 
+  
   useEffect(() => {
     if (isElectron()) {
       const ipcRenderer = window.require("electron").ipcRenderer;
